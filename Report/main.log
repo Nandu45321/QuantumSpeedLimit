@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.6.4)  16 JUL 2026 15:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.6.4)  16 JUL 2026 20:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -344,9 +344,19 @@ Chapter 2.
 
 ]
 Chapter 3.
-(./chapters/03_results.tex) (./main.bbl [4
+(./chapters/03_application.tex [4
 
-]) [5
+]
+<figures/Generalized_MT_Bound.png, id=118, 570.933pt x 354.123pt>
+File: figures/Generalized_MT_Bound.png Graphic file (type png)
+<use figures/Generalized_MT_Bound.png>
+Package pdftex.def Info: figures/Generalized_MT_Bound.png  used on input line 43.
+(pdftex.def)             Requested size: 362.37569pt x 224.77373pt.
+) [5 <./figures/Generalized_MT_Bound.png>]
+Chapter 4.
+(./chapters/04_results.tex) (./main.bbl [6
+
+]) [7
 
 ] (./main.aux)
  ***********
@@ -354,21 +364,21 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 03D6133DF423F82B902ACF85E1E0024E;1326.
+(rerunfilecheck)             Checksum: 8E53689A4F10568A6DE1162F57A1EC0B;2193.
  ) 
 Here is how much of TeX's memory you used:
- 9845 strings out of 469472
- 149687 string characters out of 5469747
- 563533 words of memory out of 5000000
- 38373 multiletter control sequences out of 15000+600000
+ 9886 strings out of 469472
+ 150603 string characters out of 5469747
+ 567781 words of memory out of 5000000
+ 38397 multiletter control sequences out of 15000+600000
  635621 words of font info for 67 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 75i,6n,79p,432b,468s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (7 pages, 55591 bytes).
+ 75i,7n,79p,553b,468s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on main.pdf (9 pages, 165490 bytes).
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 193 PDF objects out of 1000 (max. 8388607)
+ 158 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 

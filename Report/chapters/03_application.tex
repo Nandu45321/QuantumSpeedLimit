@@ -1,0 +1,48 @@
+This chapter applies the theoretical framework of Mandelstam and Tamm's Quantum Speed Limits (QSLs) discussed in the methodology to a specific problem: a two-state quantum system.
+
+\section{System Hamiltonian and Time Evolution}
+Consider a two-state quantum system governed by the Hamiltonian:
+\begin{equation}
+    H = \frac{\hbar \omega_0}{2} \sigma_z = \frac{\hbar \omega_0}{2} \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
+\end{equation}
+where $\sigma_z$ is the Pauli Z matrix. 
+The unitary time evolution operator is given by:
+\begin{equation}
+    U(t) = e^{-i H t / \hbar} = \begin{pmatrix} e^{-i \omega_0 t / 2} & 0 \\ 0 & e^{i \omega_0 t / 2} \end{pmatrix}
+\end{equation}
+
+\section{Generalized Mandelstam-Tamm Bound}
+Let the initial state of the system be parameterized by an angle $\theta$ on the Bloch sphere:
+\begin{equation}
+    |\psi(0)\rangle = \cos\frac{\theta}{2} |0\rangle + \sin\frac{\theta}{2} |1\rangle
+\end{equation}
+The state at a later time $t$ is:
+\begin{equation}
+    |\psi(t)\rangle = U(t) |\psi(0)\rangle = \cos\frac{\theta}{2} e^{-i \omega_0 t / 2} |0\rangle + \sin\frac{\theta}{2} e^{i \omega_0 t / 2} |1\rangle
+\end{equation}
+
+The inner product between the initial and evolved state is:
+\begin{equation}
+    \langle \psi(0) | \psi(t) \rangle = \cos^2\frac{\theta}{2} e^{-i \omega_0 t / 2} + \sin^2\frac{\theta}{2} e^{i \omega_0 t / 2} = \cos\left(\frac{\omega_0 t}{2}\right) - i \cos\theta \sin\left(\frac{\omega_0 t}{2}\right)
+\end{equation}
+The squared magnitude of this overlap gives the fidelity:
+\begin{equation}
+    |\langle \psi(0) | \psi(t) \rangle|^2 = \cos^2\left(\frac{\omega_0 t}{2}\right) + \cos^2\theta \sin^2\left(\frac{\omega_0 t}{2}\right)
+\end{equation}
+
+The Bures angle $\alpha(t)$ between the initial and evolved state is defined as:
+\begin{equation}
+    \alpha(t, \theta) = \arccos\left(|\langle \psi(0) | \psi(t) \rangle|\right) = \arccos\sqrt{\cos^2\left(\frac{\omega_0 t}{2}\right) + \cos^2\theta \sin^2\left(\frac{\omega_0 t}{2}\right)}
+\end{equation}
+
+\section{Computational Analysis}
+Using Python, we computationally plotted the Bures angle $\alpha(t)$ as a function of the dimensionless time $\omega_0 t$ for various initial states (different values of $\theta$) to analyze the generalized Mandelstam-Tamm (MT) bound.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/Generalized_MT_Bound.png}
+    \caption{Generalized Mandelstam-Tamm Bound: $\alpha(t)$ vs $\omega_0 t$ for different initial states $\theta$. The black dashed line represents the MT bound for orthogonal states ($\theta = \pi/2$), and the shaded gray region is forbidden by the bound.}
+    \label{fig:mt_bound}
+\end{figure}
+
+As observed in Figure \ref{fig:mt_bound}, for all initial states, the time evolution strictly respects the generalized MT bound. The evolution is fastest for $\theta = \pi/2$ (corresponding to states on the equator of the Bloch sphere), which reaches an orthogonal state ($\alpha = \pi/2$) at $\omega_0 t = \pi$. For other values of $\theta$, the system never reaches an orthogonal state, and the curve stays below the theoretical maximum bound.
