@@ -1,4 +1,4 @@
-This chapter applies the theoretical framework of Mandelstam and Tamm's Quantum Speed Limits (QSLs) discussed in the methodology to a specific problem: a two-state quantum system.
+This chapter applies the theoretical framework of Mandelstam and Tamm's Quantum Speed Limit (QSL) discussed in the methodology to a specific problem: a two-state quantum system.
 
 \section{System Hamiltonian and Time Evolution}
 Consider a two-state quantum system governed by the Hamiltonian:
@@ -10,6 +10,27 @@ The unitary time evolution operator is given by:
 \begin{equation}
     U(t) = e^{-i H t / \hbar} = \begin{pmatrix} e^{-i \omega_0 t / 2} & 0 \\ 0 & e^{i \omega_0 t / 2} \end{pmatrix}
 \end{equation}
+
+\section{Energy Variance and the MT Bound}
+To apply the Mandelstam-Tamm bound, we first compute the energy variance $\Delta H$ of the initial state. The expectation value of the Hamiltonian is:
+\begin{equation}
+    \langle H \rangle = \langle \psi(0) | H | \psi(0) \rangle = \frac{\hbar \omega_0}{2} \left( \cos^2\frac{\theta}{2} - \sin^2\frac{\theta}{2} \right) = \frac{\hbar \omega_0}{2} \cos\theta
+\end{equation}
+Since $H^2 = \left(\frac{\hbar \omega_0}{2}\right)^2 I$, the expectation value of $H^2$ is simply $\langle H^2 \rangle = \left(\frac{\hbar \omega_0}{2}\right)^2$. 
+The energy fluctuation (standard deviation) is therefore:
+\begin{equation}
+    \Delta H = \sqrt{\langle H^2 \rangle - \langle H \rangle^2} = \sqrt{\left(\frac{\hbar \omega_0}{2}\right)^2 - \left(\frac{\hbar \omega_0}{2} \cos\theta\right)^2} = \frac{\hbar \omega_0}{2} \sin\theta
+\end{equation}
+
+According to the Mandelstam-Tamm bound, the time $t$ required for the system to evolve to a state separated by a Bures angle $\Theta$ from the initial state is bounded by:
+\begin{equation}
+    t \ge \frac{\hbar \Theta}{\Delta H} = \frac{\hbar \Theta}{\frac{\hbar \omega_0}{2} \sin\theta} = \frac{2 \Theta}{\omega_0 \sin\theta}
+\end{equation}
+For the system to reach an orthogonal state, the distance is $\Theta = \pi/2$. The minimum time required to reach this orthogonal state is thus:
+\begin{equation}
+    t \ge \frac{2 \cdot (\pi/2)}{\omega_0 \sin\theta} \implies \tau_{QSL} = \frac{\pi}{\omega_0 \sin\theta}
+\end{equation}
+This indicates that the speed of evolution depends on the initial state parameter $\theta$. The fastest evolution to an orthogonal state occurs when $\theta = \pi/2$ (states on the equator of the Bloch sphere), yielding a minimum time of $\tau_{QSL} = \pi/\omega_0$.
 
 \section{Generalized Mandelstam-Tamm Bound}
 Let the initial state of the system be parameterized by an angle $\theta$ on the Bloch sphere:

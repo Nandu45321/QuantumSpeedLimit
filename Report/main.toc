@@ -6,10 +6,11 @@
 \contentsline {section}{\numberline {2.2}Implementation Details}{3}{section.2.2}%
 \contentsline {chapter}{\numberline {3}Application to a Two-State System}{4}{chapter.3}%
 \contentsline {section}{\numberline {3.1}System Hamiltonian and Time Evolution}{4}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Generalized Mandelstam-Tamm Bound}{4}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Computational Analysis}{5}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Results and Conclusion}{6}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Observations}{6}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Discussion}{6}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Summary}{6}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Future Work}{6}{section.4.4}%
+\contentsline {section}{\numberline {3.2}Energy Variance and the MT Bound}{4}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Generalized Mandelstam-Tamm Bound}{5}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Computational Analysis}{6}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Results and Conclusion}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Observations}{7}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Discussion}{7}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Summary}{7}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Future Work}{7}{section.4.4}%
