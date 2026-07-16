@@ -1,0 +1,57 @@
+\documentclass[12pt,a4paper]{report}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{cite}
+
+% Page Geometry
+\geometry{a4paper, margin=1in}
+
+% Title Page Information
+\title{
+    \vspace{2cm}
+    \textbf{\Huge Internship Report}\\[1cm]
+    \textbf{\Large SRM University, AP}\\[2cm]
+}
+\author{
+    \textbf{Yamulapalli Nandu Navadeep} \\ 
+    \textit{IISER Thiruvananthapuram} \\[1cm] 
+    Mentor: \textbf{Dr. Swetamber P Das}\\
+    \textit{SRM University, AP}\\
+}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This internship focused on understanding Quantum Speed Limits (QSLs), which define the fundamental limits on the time required for a quantum system to evolve from one state to another. The project explored various formulations of QSLs, including the Mandelstam-Tamm bound and the Margolus-Levitin bound, and their applications in two state quantum systems. 
+\end{abstract}
+
+\tableofcontents
+\pagebreak
+
+\onehalfspacing
+
+% Chapters
+\chapter{Introduction}
+\input{chapters/01_introduction}
+
+\chapter{Methodology}
+\input{chapters/02_methodology}
+
+\chapter{Results and Conclusion}
+\input{chapters/03_results}
+
+% Bibliography
+\nocite{*} % Remove this line once you start citing actual references in the text!
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

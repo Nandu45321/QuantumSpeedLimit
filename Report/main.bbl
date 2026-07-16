@@ -1,0 +1,8 @@
+\begin{thebibliography}{1}
+
+\bibitem{example_citation}
+John Doe and Jane Smith.
+\newblock An example paper on machine learning.
+\newblock {\em Journal of Examples}, 2026.
+
+\end{thebibliography}
