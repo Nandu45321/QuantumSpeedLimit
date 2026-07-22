@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1784693268.4521 "main.aux" "main.bbl" "main" 1784721355.31918 0
+["bibtex main"] 1784723647.10213 "main.aux" "main.bbl" "main" 1784723648.21887 0
   "./references.bib" 1784693265.24938 950 2f2cc8b4a3a3da8226c05b848340719c ""
   "/usr/share/texmf-dist/bibtex/bst/base/plain.bst" 1775415801 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1784721355.18784 3839 bc47b33ae8341f1cbfc1cc77048a119a "pdflatex"
+  "main.aux" 1784723647.60747 3839 bc47b33ae8341f1cbfc1cc77048a119a "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1784721354.80746 "/home/nandu/Documents/IISER 4/SRM AP/Report/main.tex" "main.pdf" "main" 1784721355.31932 0
+["pdflatex"] 1784723647.25217 "/home/nandu/Documents/IISER 4/SRM AP/Report/main.tex" "main.pdf" "main" 1784723648.21904 0
   "/home/nandu/Documents/IISER 4/SRM AP/Report/main.tex" 1784693459.80963 1461 7911969e4e9f3484016d0afa06874f99 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1775415801 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1775415801 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -92,14 +92,14 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1780532415 2378843 9a49ed8d1b96e1fc4aa9a9f77069cf82 ""
   "chapters/01_introduction.tex" 1784578024.7925 1715 16a4b2a4b168827d25bf254eaf49901e ""
   "chapters/02_methodology.tex" 1784721343.93494 7239 fd0e23d199f1bdd6a6d6959a544674a2 ""
-  "chapters/03_application.tex" 1784228177.58179 4890 a6a40f808648330a9b14b2a8e947ccbe ""
+  "chapters/03_application.tex" 1784723645.74348 5645 9be480dd5a5e6a9d2c9e9bf1726dab49 ""
   "chapters/04_results.tex" 1784721354.54785 3454 9416cd18cf930c1e21461b35b9887ccb ""
   "figures/Generalized_MT_Bound.png" 1784211522.07298 53796 e3be833e67b50cdad9bba47a3c46ea1d ""
-  "main.aux" 1784721355.18784 3839 bc47b33ae8341f1cbfc1cc77048a119a "pdflatex"
-  "main.bbl" 1784693268.49335 831 6818e5a322a9b1835e788938673341ed "bibtex main"
-  "main.out" 1784721355.18884 3613 5092a235f869672f08c0c2bb47d1e3a2 "pdflatex"
+  "main.aux" 1784723647.60747 3839 bc47b33ae8341f1cbfc1cc77048a119a "pdflatex"
+  "main.bbl" 1784723647.24547 831 6818e5a322a9b1835e788938673341ed "bibtex main"
+  "main.out" 1784723647.60847 3613 5092a235f869672f08c0c2bb47d1e3a2 "pdflatex"
   "main.tex" 1784693459.80963 1461 7911969e4e9f3484016d0afa06874f99 ""
-  "main.toc" 1784721355.18884 1643 cd1ba07c87fba6c7c2c1336c00a14a6d "pdflatex"
+  "main.toc" 1784723647.67947 1643 cd1ba07c87fba6c7c2c1336c00a14a6d "pdflatex"
   (generated)
   "main.aux"
   "main.log"

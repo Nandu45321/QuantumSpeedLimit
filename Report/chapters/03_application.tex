@@ -1,11 +1,12 @@
-This chapter applies the theoretical framework of Mandelstam and Tamm's Quantum Speed Limit discussed in the methodology to a specific problem: a two-state quantum system.
+This chapter applies the theoretical framework of Mandelstam and Tamm's Quantum Speed Limit discussed in the methodology to a specific two-state quantum system.
 
 \section{System Hamiltonian and Time Evolution}
 Consider a two-state quantum system governed by the Hamiltonian:
 \begin{equation}
     H = \frac{\hbar \omega_0}{2} \sigma_z = \frac{\hbar \omega_0}{2} \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
 \end{equation}
-where $\sigma_z$ is the Pauli Z matrix. 
+where $\sigma_z$ is the Pauli Z matrix. This time-independent, diagonal Hamiltonian is the standard model for a two-level system, such as a spin-1/2 particle in a constant magnetic field. Its simplicity provides exact analytical solutions for state evolution and energy variance, making it ideal for clearly demonstrating the Mandelstam-Tamm bound.
+
 The unitary time evolution operator is given by:
 \begin{equation}
     U(t) = e^{-i H t / \hbar} = \begin{pmatrix} e^{-i \omega_0 t / 2} & 0 \\ 0 & e^{i \omega_0 t / 2} \end{pmatrix}
@@ -56,14 +57,25 @@ The Bures angle $\alpha(t)$ between the initial and evolved state is defined as:
     \alpha(t, \theta) = \arccos\left(|\langle \psi(0) | \psi(t) \rangle|\right) = \arccos\sqrt{\cos^2\left(\frac{\omega_0 t}{2}\right) + \cos^2\theta \sin^2\left(\frac{\omega_0 t}{2}\right)}
 \end{equation}
 
-\section{Computational Analysis}
-Using Python, we computationally plotted the Bures angle $\alpha(t)$ as a function of the dimensionless time $\omega_0 t$ for various initial states (different values of $\theta$) to analyze the generalized Mandelstam-Tamm (MT) bound.
+Furthermore, adding an arbitrary relative phase $\phi$ to the initial state:
+\begin{equation}
+    |\psi(0)\rangle = \cos\frac{\theta}{2} |0\rangle + e^{i\phi}\sin\frac{\theta}{2} |1\rangle
+\end{equation}
+shows that $e^{i\phi}$ cancels during the inner product calculation. So, $\alpha(t)$ is independent of $\phi$.
 
-\begin{figure}[h]
+For states on the Bloch sphere equator, the generalized Bures angle simplifies to:
+\begin{equation}
+    \alpha\left(t, \theta = \frac{\pi}{2}\right) = \frac{\omega_0 t}{2}
+\end{equation}
+
+\section{Computational Analysis}
+We used Python to plot the Bures angle $\alpha(t)$ against dimensionless time $\omega_0 t$ for various initial states ($\theta$) to analyze the generalized MT bound.
+
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.8\textwidth]{figures/Generalized_MT_Bound.png}
     \caption{Generalized Mandelstam-Tamm Bound: $\alpha(t)$ vs $\omega_0 t$ for different initial states $\theta$. The black dashed line represents the MT bound for orthogonal states ($\theta = \pi/2$), and the shaded gray region is forbidden by the bound.}
     \label{fig:mt_bound}
 \end{figure}
 
-As observed in Figure \ref{fig:mt_bound}, for all initial states, the time evolution strictly respects the generalized MT bound. The evolution is fastest for $\theta = \pi/2$ (corresponding to states on the equator of the Bloch sphere), which reaches an orthogonal state ($\alpha = \pi/2$) at $\omega_0 t = \pi$. For other values of $\theta$, the system never reaches an orthogonal state, and the curve stays below the theoretical maximum bound.
+Figure \ref{fig:mt_bound} shows equatorial states ($\theta = \pi/2$) evolve fastest, reaching an orthogonal state ($\alpha = \pi/2$) at $\omega_0 t = \pi$. Other states never reach orthogonality, staying below the maximum bound. The periodic variation of $\alpha(t)$ reflects unitary evolution: the state precesses around the z-axis, reaching maximum distinguishability at half the period ($\omega_0 t = \pi$) before rotating back to its start, completing the cycle.
