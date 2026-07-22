@@ -1,8 +1,23 @@
 \begin{thebibliography}{1}
 
-\bibitem{example_citation}
-John Doe and Jane Smith.
-\newblock An example paper on machine learning.
-\newblock {\em Journal of Examples}, 2026.
+\bibitem{bertlmann2008}
+Reinhold~A. Bertlmann and Nicolai Friis.
+\newblock Theoretical physics t2: Quantum mechanics.
+\newblock Course of Lectures, Sommersemester 2008, 2008.
+
+\bibitem{deffner2017}
+Sebastian Deffner and Steve Campbell.
+\newblock Quantum speed limits: from heisenberg's uncertainty principle to optimal quantum control.
+\newblock {\em Journal of Physics A: Mathematical and Theoretical}, 50(45):453001, 2017.
+
+\bibitem{griffiths2004}
+David~J. Griffiths.
+\newblock {\em Introduction to Quantum Mechanics}.
+\newblock Pearson Prentice Hall, 2nd edition, 2004.
+
+\bibitem{mandelstam1945}
+Leonid Mandelstam and Igor Tamm.
+\newblock The uncertainty relation between energy and time in non-relativistic quantum mechanics.
+\newblock {\em J. Phys.(USSR)}, 9:249--254, 1945.
 
 \end{thebibliography}

@@ -1,21 +1,21 @@
 This chapter establishes the theoretical foundation for the Quantum Speed Limit, beginning with the historical context of the energy-time uncertainty principle and culminating in the rigorous derivation of the Mandelstam-Tamm bound.
 
 \section{The Energy-Time Uncertainty Principle}
-In standard quantum mechanics, the Heisenberg uncertainty principle places fundamental limits on the precision with which certain pairs of conjugate variables can be simultaneously known (e.g., $\Delta x \Delta p \ge \hbar/2$). 
+In standard quantum mechanics, the Heisenberg uncertainty principle places fundamental limits on the precision with which certain pairs of conjugate variables can be simultaneously known (e.g., $\Delta x \Delta p \ge \hbar/2$) \cite{griffiths2004}. 
 
 Historically, a similar relation for energy and time has been widely used:
 \begin{equation}
     \Delta E \Delta t \ge \frac{\hbar}{2}
 \end{equation}
-While practically useful, its theoretical interpretation fundamentally differs from the position-momentum uncertainty relation. In standard quantum mechanics, time $t$ is not an observable represented by a Hermitian operator; it is an external, continuous parameter tracking evolution. Consequently, $\Delta t$ does not represent the statistical dispersion of multiple measurements. Instead, $\Delta t$ represents a characteristic time scale: it is the minimum time required for the expectation value of some dynamical observable to change by an amount equal to its standard deviation.
+While practically useful, its theoretical interpretation fundamentally differs from the position-momentum uncertainty relation. In standard quantum mechanics, time $t$ is not an observable represented by a Hermitian operator; it is an external, continuous parameter tracking dynamical evolution \cite{griffiths2004}. Consequently, $\Delta t$ does not represent the statistical dispersion of multiple measurements. Instead, $\Delta t$ represents a characteristic time scale: it is the minimum time required for the expectation value of some dynamical observable to change by an amount equal to its standard deviation.
 
-To formalize this interpretation and apply it to state evolution, Mandelstam and Tamm (1945) circumvented the lack of a time operator by anchoring the concept of "time uncertainty" directly to the survival probability of the system. They derived a rigorous lower bound on the time required for an initial quantum state to evolve into a distinguishable, orthogonal state, relying purely on the well-established Robertson uncertainty relation.
+To formalize this interpretation and apply it to state evolution, Mandelstam and Tamm (1945) circumvented the lack of a time operator by anchoring the concept of "time uncertainty" directly to the survival probability of the system \cite{mandelstam1945}. They derived a rigorous lower bound on the time required for an initial quantum state to evolve into a distinguishable, orthogonal state, relying purely on the well-established Robertson uncertainty relation \cite{deffner2017}.
 
 \section{Tools and Technologies}
 The computational aspects of this project were purely focused on graphing and visualizing the theoretical bound. For this purpose, the Python programming language was utilized, specifically relying on the \texttt{numpy} library for numerical calculations and arrays, and the \texttt{matplotlib} library for generating the plots of the time evolution and Bures angle.
 
 \section{Derivation of the Mandelstam-Tamm Bound}
-The core implementation of this project centers on the rigorous derivation of the Mandelstam-Tamm (MT) Quantum Speed Limit from first principles. 
+The core of this project centers on rigorously deriving the Mandelstam-Tamm (MT) Quantum Speed Limit from first principles \cite{deffner2017}. 
 
 \subsection{The Robertson Uncertainty Relation and Density Matrices}
 We begin with the generalized Robertson uncertainty relation for two observables, $H$ (the Hamiltonian) and $A$:
@@ -33,7 +33,7 @@ Substituting this into the uncertainty relation yields:
 
 To measure how fast the system leaves its initial state $|\psi(0)\rangle$, we strategically choose the observable $A$ to be the projection operator onto the initial state: $A = |\psi(0)\rangle \langle \psi(0)|$. This operator is mathematically equivalent to the density matrix of the initial pure state ($\rho(0)$). 
 
-Density matrices are fundamentally involved in this formulation because they naturally encapsulate the statistical state of a quantum system, and their time evolution is governed directly by the von Neumann equation (the quantum analogue of Liouville's theorem in classical mechanics). A crucial property of the density matrix for a pure state (or any projection operator) is idempotency, meaning $A^2 = A$. 
+Density matrices are fundamentally involved in this formulation because they naturally encapsulate the statistical state of a quantum system, and their time evolution is governed directly by the von Neumann equation (the quantum analogue of Liouville's theorem in classical mechanics) \cite{bertlmann2008}. A crucial property of the density matrix for a pure state (or any projection operator) is idempotency, meaning $A^2 = A$. 
 
 Using this property, the variance of $A$ simplifies significantly:
 \begin{equation}
