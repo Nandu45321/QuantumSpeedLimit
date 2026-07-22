@@ -1,21 +1,19 @@
-This chapter presents the results obtained from the experiments or tasks carried out during the internship.
-
-\section{Observations}
-Detail your findings here. You can include figures and tables.
-
-% Example figure inclusion:
-% \begin{figure}[h]
-%     \centering
-%     \includegraphics[width=0.5\textwidth]{figures/example_image.png}
-%     \caption{Example figure description.}
-%     \label{fig:example}
-% \end{figure}
-
-\section{Discussion}
-Discuss the significance of your results and how they meet the objectives.
+This chapter summarizes the findings of the internship project, discusses the physical implications of the derived bound, and outlines potential directions for future study.
 
 \section{Summary}
-Briefly restate the main achievements of the project.
+This project successfully explored the fundamental limit of quantum dynamics. We began by reviewing the underlying quantum mechanical formalism, establishing a solid theoretical foundation in state vectors, operators, and density matrices. With this framework, we rigorously derived the Mandelstam-Tamm (MT) Quantum Speed Limit from the Robertson uncertainty relation, bypassing the historical ambiguities of the energy-time uncertainty principle. 
+
+The bound was then generalized to account for the evolution between non-orthogonal initial and final states. Finally, we explicitly applied this generalized bound to a two-level quantum system and verified it computationally. The numerical simulations successfully confirmed that the speed of the system's state evolution is strictly bounded by its energy variance, with the fastest possible evolution occurring for initial states with maximum energy uncertainty (states on the equator of the Bloch sphere).
+
+\section{Discussion and Physical Meaning}
+The Mandelstam-Tamm bound holds profound implications for the physical reality of dynamic systems. It dictates that quantum states possess a fundamental, inescapable "speed limit" that is entirely governed by their energy variance ($\Delta H$). 
+
+In practical terms, this places a hard physical limit on how fast quantum processes can occur. For instance, in the realm of quantum computing, the clock speed of a quantum processor—the minimum time required to reliably flip a qubit from $|0\rangle$ to $|1\rangle$ (an orthogonal state)—cannot be made arbitrarily short. It is strictly bounded by the energy resources (specifically, the energy spread) available to the system. A faster operation inherently requires a larger energy variance. This means that designing ultra-fast quantum computers or highly efficient quantum thermodynamic engines will eventually hit a fundamental physical bottleneck dictated by the MT bound, representing the absolute theoretical maximum of quantum control.
 
 \section{Future Work}
-Mention any extensions or improvements that could be made to the project in the future.
+While this internship focused deeply on the Mandelstam-Tamm formulation, the study of the Quantum Speed Limit is a vast and active field of research. Future work could build upon this foundation in several exciting directions:
+\begin{itemize}
+    \item \textbf{The Margolus-Levitin Bound:} Exploring the other primary quantum speed limit, the Margolus-Levitin (ML) bound. While the MT bound restricts evolution based on energy variance ($\Delta H$), the ML bound restricts it based on the mean energy above the ground state ($E - E_0$). Investigating the crossover regime where one bound becomes tighter than the other would provide a complete picture of pure state dynamics.
+    \item \textbf{Open Quantum Systems:} The current study assumed a closed quantum system undergoing isolated, unitary time evolution. A natural next step would be to apply the QSL to open quantum systems, where the system interacts with an external environment, leading to decoherence and non-unitary dynamics.
+    \item \textbf{Many-Body Systems:} Extending the application of this bound from a simple two-state system to complex many-body quantum systems, to study how entanglement and quantum correlations affect the overall speed of evolution.
+\end{itemize}

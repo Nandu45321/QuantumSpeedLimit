@@ -1,16 +1,19 @@
 \contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Background}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Objectives}{2}{section.1.2}%
-\contentsline {chapter}{\numberline {2}Methodology}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Tools and Technologies}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Implementation Details}{3}{section.2.2}%
-\contentsline {chapter}{\numberline {3}Application to a Two-State System}{4}{chapter.3}%
-\contentsline {section}{\numberline {3.1}System Hamiltonian and Time Evolution}{4}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Energy Variance and the MT Bound}{4}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Generalized Mandelstam-Tamm Bound}{5}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Computational Analysis}{6}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Results and Conclusion}{7}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Observations}{7}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Discussion}{7}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Summary}{7}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Future Work}{7}{section.4.4}%
+\contentsline {chapter}{\numberline {2}Theory}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}The Energy-Time Uncertainty Principle}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Tools and Technologies}{4}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Derivation of the Mandelstam-Tamm Bound}{4}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}The Robertson Uncertainty Relation and Density Matrices}{4}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Integrating the Bound for Orthogonal States}{5}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Generalized Mandelstam-Tamm Bound}{5}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Application to a Two-State System}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}System Hamiltonian and Time Evolution}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Energy Variance and the MT Bound}{7}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Generalized Mandelstam-Tamm Bound}{8}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Computational Analysis}{9}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Results and Conclusion}{10}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Summary}{10}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Discussion and Physical Meaning}{10}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Future Work}{11}{section.4.3}%

@@ -1,7 +1,80 @@
-This chapter details the methods, tools, and techniques used during the internship. 
+This chapter establishes the theoretical foundation for the Quantum Speed Limit, beginning with the historical context of the energy-time uncertainty principle and culminating in the rigorous derivation of the Mandelstam-Tamm bound.
+
+\section{The Energy-Time Uncertainty Principle}
+In standard quantum mechanics, the Heisenberg uncertainty principle places fundamental limits on the precision with which certain pairs of conjugate variables can be simultaneously known (e.g., $\Delta x \Delta p \ge \hbar/2$). 
+
+Historically, a similar relation for energy and time has been widely used:
+\begin{equation}
+    \Delta E \Delta t \ge \frac{\hbar}{2}
+\end{equation}
+While practically useful, its theoretical interpretation fundamentally differs from the position-momentum uncertainty relation. In standard quantum mechanics, time $t$ is not an observable represented by a Hermitian operator; it is an external, continuous parameter tracking evolution. Consequently, $\Delta t$ does not represent the statistical dispersion of multiple measurements. Instead, $\Delta t$ represents a characteristic time scale: it is the minimum time required for the expectation value of some dynamical observable to change by an amount equal to its standard deviation.
+
+To formalize this interpretation and apply it to state evolution, Mandelstam and Tamm (1945) circumvented the lack of a time operator by anchoring the concept of "time uncertainty" directly to the survival probability of the system. They derived a rigorous lower bound on the time required for an initial quantum state to evolve into a distinguishable, orthogonal state, relying purely on the well-established Robertson uncertainty relation.
 
 \section{Tools and Technologies}
-Mention the software, hardware, or theoretical frameworks utilized.
+The computational aspects of this project were purely focused on graphing and visualizing the theoretical bound. For this purpose, the Python programming language was utilized, specifically relying on the \texttt{numpy} library for numerical calculations and arrays, and the \texttt{matplotlib} library for generating the plots of the time evolution and Bures angle.
 
-\section{Implementation Details}
-Describe how the project was implemented step-by-step.
+\section{Derivation of the Mandelstam-Tamm Bound}
+The core implementation of this project centers on the rigorous derivation of the Mandelstam-Tamm (MT) Quantum Speed Limit from first principles. 
+
+\subsection{The Robertson Uncertainty Relation and Density Matrices}
+We begin with the generalized Robertson uncertainty relation for two observables, $H$ (the Hamiltonian) and $A$:
+\begin{equation}
+    \Delta H \Delta A \ge \frac{1}{2} |\langle [H, A] \rangle|
+\end{equation}
+To find a bound on the time evolution of the system, we need to relate the commutator to the time derivative of an observable. The time evolution of the expectation value of any operator $A$ (that does not explicitly depend on time) is governed by the Heisenberg equation of motion, which is intimately connected to the von Neumann equation:
+\begin{equation}
+    \frac{d\langle A \rangle}{dt} = \frac{i}{\hbar} \langle [H, A] \rangle \implies |\langle [H, A] \rangle| = \hbar \left| \frac{d\langle A \rangle}{dt} \right|
+\end{equation}
+Substituting this into the uncertainty relation yields:
+\begin{equation}
+    \Delta H \Delta A \ge \frac{\hbar}{2} \left| \frac{d\langle A \rangle}{dt} \right|
+\end{equation}
+
+To measure how fast the system leaves its initial state $|\psi(0)\rangle$, we strategically choose the observable $A$ to be the projection operator onto the initial state: $A = |\psi(0)\rangle \langle \psi(0)|$. This operator is mathematically equivalent to the density matrix of the initial pure state ($\rho(0)$). 
+
+Density matrices are fundamentally involved in this formulation because they naturally encapsulate the statistical state of a quantum system, and their time evolution is governed directly by the von Neumann equation (the quantum analogue of Liouville's theorem in classical mechanics). A crucial property of the density matrix for a pure state (or any projection operator) is idempotency, meaning $A^2 = A$. 
+
+Using this property, the variance of $A$ simplifies significantly:
+\begin{equation}
+    \Delta A = \sqrt{\langle A^2 \rangle - \langle A \rangle^2} = \sqrt{\langle A \rangle - \langle A \rangle^2}
+\end{equation}
+The expectation value $\langle A \rangle_t = \langle \psi(t) | A | \psi(t) \rangle = |\langle \psi(0) | \psi(t) \rangle|^2$ represents the survival probability (or fidelity) of the initial state at time $t$. 
+
+\subsection{Integrating the Bound for Orthogonal States}
+Substituting our simplified $\Delta A$ into the uncertainty relation gives:
+\begin{equation}
+    \Delta H \sqrt{\langle A \rangle - \langle A \rangle^2} \ge \frac{\hbar}{2} \left| \frac{d\langle A \rangle}{dt} \right|
+\end{equation}
+As the quantum system evolves away from its initial state, the survival probability $\langle A \rangle$ decreases from its initial value of 1, meaning $\frac{d\langle A \rangle}{dt} \le 0$. Thus, $\left| \frac{d\langle A \rangle}{dt} \right| = - \frac{d\langle A \rangle}{dt}$. Separating variables and integrating from $t=0$ (where $\langle A \rangle_0 = 1$) to time $t$:
+\begin{equation}
+    \int_0^t \frac{2 \Delta H}{\hbar} dt \ge \int_{1}^{\langle A \rangle_t} \frac{-d\langle A \rangle}{\sqrt{\langle A \rangle (1 - \langle A \rangle)}}
+\end{equation}
+By substituting $\langle A \rangle = \sin^2\theta$, the integral evaluates exactly to:
+\begin{equation}
+    \frac{2 \Delta H t}{\hbar} \ge \pi - 2 \arcsin(\sqrt{\langle A \rangle_t}) \implies \frac{\Delta H t}{\hbar} \ge \frac{\pi}{2} - \arcsin(\sqrt{\langle A \rangle_t})
+\end{equation}
+
+To find the minimum time required for the system to reach a completely \textit{orthogonal} state, we set $\langle \psi(0) | \psi(\tau) \rangle = 0$, which means $\langle A \rangle_\tau = 0$.
+\begin{equation}
+    \frac{\Delta H \tau_{QSL}}{\hbar} \ge \frac{\pi}{2} - \arcsin(0) = \frac{\pi}{2}
+\end{equation}
+Rearranging for $\tau_{QSL}$, we recover the famous Mandelstam-Tamm Quantum Speed Limit for orthogonal states:
+\begin{equation}
+    \tau_{QSL} \ge \frac{\pi \hbar}{2 \Delta H}
+\end{equation}
+
+\section{Generalized Mandelstam-Tamm Bound}
+In many practical scenarios, a quantum system might not evolve to a completely orthogonal state, but rather to a target state separated by some Bures angle $\Theta$. We can define the inner product overlap in terms of this angle as $\langle A \rangle_t = \cos^2\Theta$.
+
+Plugging this non-orthogonal overlap into our integrated bound gives:
+\begin{align}
+    \frac{\Delta H t}{\hbar} &\ge \frac{\pi}{2} - \arcsin\left(\sqrt{\cos^2\Theta}\right) \nonumber \\
+    &= \frac{\pi}{2} - \arcsin(\cos\Theta) \nonumber \\
+    &= \frac{\pi}{2} - \left( \frac{\pi}{2} - \Theta \right) = \Theta
+\end{align}
+This provides the generalized Mandelstam-Tamm bound for any arbitrary angle $\Theta$:
+\begin{equation}
+    t \ge \frac{\hbar \Theta}{\Delta H}
+\end{equation}
+This generalized formulation elegantly ensures that the time required to traverse an angle $\Theta$ in the Hilbert space is fundamentally restricted by the energy uncertainty of the system, bridging the gap between orthogonal and non-orthogonal state evolution.
