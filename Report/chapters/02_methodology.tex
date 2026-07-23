@@ -20,7 +20,7 @@ We begin with the generalized Robertson uncertainty relation. For a quantum syst
 \begin{equation}
     \Delta H \Delta A \ge \frac{1}{2} |\langle [H, A] \rangle|
 \end{equation}
-Here, the angle brackets $\langle \dots \rangle$ denote the quantum mechanical expectation value: the statistical average of measuring the enclosed operator in the given quantum state.
+Here, the angle brackets $\langle . \rangle$ denote the quantum mechanical expectation value: the statistical average of measuring the enclosed operator in the given quantum state.
 To find a bound on the time evolution of the system, we need to relate the commutator to the time derivative of an observable. The time evolution of the expectation value of any operator $A$ (that does not explicitly depend on time) is governed by the Heisenberg equation of motion, which is intimately connected to the von Neumann equation:
 \begin{equation}
     \frac{d\langle A \rangle}{dt} = \frac{i}{\hbar} \langle [H, A] \rangle \implies |\langle [H, A] \rangle| = \hbar \left| \frac{d\langle A \rangle}{dt} \right|
@@ -38,7 +38,7 @@ Using this property, the variance of $A$ simplifies significantly:
 \begin{equation}
     \Delta A = \sqrt{\langle A^2 \rangle - \langle A \rangle^2} = \sqrt{\langle A \rangle - \langle A \rangle^2}
 \end{equation}
-The expectation value $\langle A \rangle_t = \langle \psi(t) | A | \psi(t) \rangle = |\langle \psi(0) | \psi(t) \rangle|^2$ represents the survival probability (or fidelity) of the initial state at time $t$. 
+The expectation value $\langle A \rangle_t = \langle \psi(t) | A | \psi(t) \rangle = |\langle \psi(0) | \psi(t) \rangle|^2$ represents the exact probability of finding the system still in its initial state at a later time $t$. 
 
 \subsection{Integrating the Bound for Orthogonal States}
 Substituting our simplified $\Delta A$ into the uncertainty relation gives:
@@ -54,7 +54,7 @@ By substituting $\langle A \rangle = \sin^2\theta$, the integral evaluates exact
     \frac{2 \Delta H t}{\hbar} \ge \pi - 2 \arcsin(\sqrt{\langle A \rangle_t}) \implies \frac{\Delta H t}{\hbar} \ge \frac{\pi}{2} - \arcsin(\sqrt{\langle A \rangle_t})
 \end{equation}
 
-To find the minimum time required for the system to reach a completely \textit{orthogonal} state, which is physically crucial because only perfectly orthogonal states are 100\% distinguishable from one another upon measurement, representing the time required to complete a distinct quantum operation, we set $\langle \psi(0) | \psi(\tau) \rangle = 0$, which means $\langle A \rangle_\tau = 0$.
+To find the minimum time required for the system to reach a completely \textit{orthogonal} state, which is physically crucial because only perfectly orthogonal states are completely distinguishable from one another upon measurement, representing the time required to complete a distinct quantum operation, we set $\langle \psi(0) | \psi(\tau) \rangle = 0$, which means $\langle A \rangle_\tau = 0$.
 \begin{equation}
     \frac{\Delta H \tau_{QSL}}{\hbar} \ge \frac{\pi}{2} - \arcsin(0) = \frac{\pi}{2}
 \end{equation}
@@ -64,7 +64,7 @@ Rearranging for $\tau_{QSL}$, we recover the famous Mandelstam-Tamm Quantum Spee
 \end{equation}
 
 \section{Generalized Mandelstam-Tamm Bound}
-In many practical scenarios, a quantum system might not evolve to a completely orthogonal state, but rather to a target state separated by some Bures angle $\Theta$. We can explicitly show that the state overlap (fidelity) is equivalent to the trace of the product of the density matrices at $t=0$ ($A_0 = |\psi(0)\rangle\langle\psi(0)|$) and time $t$ ($A_t = |\psi(t)\rangle\langle\psi(t)|$). By evaluating the trace, we find:
+In many practical scenarios, a quantum system might not evolve to a completely orthogonal state, but rather to a target state separated by some Bures angle $\Theta$. The Bures angle is simply a geometric measure of the distinguishability, or the mathematical ``distance", between two quantum states in the Hilbert space. We can explicitly show that the state overlap is equivalent to the trace of the product of the density matrices at $t=0$ ($A_0 = |\psi(0)\rangle\langle\psi(0)|$) and time $t$ ($A_t = |\psi(t)\rangle\langle\psi(t)|$). By evaluating the trace, we find:
 \begin{align}
     \langle A \rangle_t = \text{Tr}(A_0 A_t) &= \text{Tr} \Big( |\psi(0)\rangle\langle\psi(0)| \psi(t)\rangle\langle\psi(t)| \Big) \nonumber \\
     &= \langle\psi(t)|\psi(0)\rangle \langle\psi(0)|\psi(t)\rangle \nonumber \\
@@ -81,4 +81,4 @@ This provides the generalized Mandelstam-Tamm bound for any arbitrary angle $\Th
 \begin{equation}
     \Delta t \ge \frac{\hbar \Theta}{\Delta H}
 \end{equation}
-This generalized formulation elegantly ensures that the time interval $\Delta t$ required to traverse an angle $\Theta$ in the Hilbert space is fundamentally restricted by the energy uncertainty of the system. In other words, $\Delta t$ represents the absolute minimum duration, the true quantum speed limit, for any physical process to drive the system between two states separated by $\Theta$, perfectly bridging the gap between orthogonal and non-orthogonal state evolution.
+This generalized formulation ensures that the time interval $\Delta t$ required to traverse an angle $\Theta$ in the Hilbert space is fundamentally restricted by the energy uncertainty of the system. In other words, $\Delta t$ represents the absolute minimum duration, the true quantum speed limit, for any physical process to drive the system between two states separated by $\Theta$, because no physical mechanism can possibly force the state to evolve faster than this variance dependent timescale.

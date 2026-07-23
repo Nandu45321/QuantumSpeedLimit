@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1784781740.04372 "main.aux" "main.bbl" "main" 1784782491.44913 0
+["bibtex main"] 1784821532.26782 "main.aux" "main.bbl" "main" 1784821736.98116 0
   "./references.bib" 1784753405.52035 1227 741f4af686355207a014ca369f7bb18c ""
   "/usr/share/texmf-dist/bibtex/bst/base/plain.bst" 1775415801 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1784782491.34747 4357 deb816af4bdc36b87a4c1d36459726f6 "pdflatex"
+  "main.aux" 1784821736.86725 4357 c8e98151e83c2640aa96d4ff8f708b1d "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1784782491.05009 "/home/nandu/Documents/IISER 4/SRM AP/Report/main.tex" "main.pdf" "main" 1784782491.4493 0
-  "/home/nandu/Documents/IISER 4/SRM AP/Report/main.tex" 1784750774.74739 1468 8793ceb4cca721ce9beafcb5555511e4 ""
+["pdflatex"] 1784821736.54553 "/home/nandu/Documents/IISER 4/SRM AP/Report/main.tex" "main.pdf" "main" 1784821736.98134 0
+  "/home/nandu/Documents/IISER 4/SRM AP/Report/main.tex" 1784820818.74593 1470 dd996c654ce0a968a70ae5104b9771a7 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1775415801 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1775415801 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1775415801 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -89,16 +89,16 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1780532443 5385779 47c0c393a77fd4a098bacfd57d66b88a ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1780532415 2378843 9a49ed8d1b96e1fc4aa9a9f77069cf82 ""
   "chapters/01_introduction.tex" 1784751411.92457 2259 8b99ce40d9443828c6ab42e464ad63c1 ""
-  "chapters/02_methodology.tex" 1784752682.0101 8352 618e8a012ae91a546f4709493235583c ""
-  "chapters/03_application.tex" 1784781739.46988 10613 1dd1538aa46806b8c6c5751809aa7724 ""
-  "chapters/04_results.tex" 1784782490.9099 4280 da5ceddc90c74ccee6c7d21e50b6e540 ""
+  "chapters/02_methodology.tex" 1784821410.51702 8540 a2aae9d31a92096d50035c580c2c4bab ""
+  "chapters/03_application.tex" 1784821531.4185 10810 8ccb29079d083e64392d27ba60c6df89 ""
+  "chapters/04_results.tex" 1784821736.40425 4412 6f3f2c19202caf1632d8e300b8246f8c ""
   "figures/Bloch Sphere.png" 1784753187.85828 73523 80f606e035707ca196f83e22957e52e2 ""
   "figures/Generalized_MT_Bound.png" 1784211522.07298 53796 e3be833e67b50cdad9bba47a3c46ea1d ""
-  "main.aux" 1784782491.34747 4357 deb816af4bdc36b87a4c1d36459726f6 "pdflatex"
-  "main.bbl" 1784781740.08435 1082 36f944c24751ff129e90b1d957c8caed "bibtex main"
-  "main.out" 1784782491.34847 3734 329752dfd104b4d27dfd483278ae581b "pdflatex"
-  "main.tex" 1784750774.74739 1468 8793ceb4cca721ce9beafcb5555511e4 ""
-  "main.toc" 1784782491.34945 1676 44c5f53c3faba113991667399ba95655 "pdflatex"
+  "main.aux" 1784821736.86725 4357 c8e98151e83c2640aa96d4ff8f708b1d "pdflatex"
+  "main.bbl" 1784821532.33449 1082 36f944c24751ff129e90b1d957c8caed "bibtex main"
+  "main.out" 1784821736.86825 3734 329752dfd104b4d27dfd483278ae581b "pdflatex"
+  "main.tex" 1784820818.74593 1470 dd996c654ce0a968a70ae5104b9771a7 ""
+  "main.toc" 1784821736.86825 1676 dcebdffde58e5d505d09b506cf984a43 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
