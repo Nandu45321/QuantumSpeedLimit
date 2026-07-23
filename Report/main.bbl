@@ -15,6 +15,11 @@ David~J. Griffiths.
 \newblock {\em Introduction to Quantum Mechanics}.
 \newblock Pearson Prentice Hall, 2nd edition, 2004.
 
+\bibitem{jazaeri2019}
+Farzan Jazaeri, Arnout Beckers, Armin Tajalli, and Jean-Michel Sallese.
+\newblock A review on quantum computing: Qubits, cryogenic electronics and cryogenic mosfet physics.
+\newblock {\em arXiv preprint arXiv:1908.02656}, 2019.
+
 \bibitem{mandelstam1945}
 Leonid Mandelstam and Igor Tamm.
 \newblock The uncertainty relation between energy and time in non-relativistic quantum mechanics.

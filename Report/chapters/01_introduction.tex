@@ -1,15 +1,15 @@
-This chapter introduces the background of the internship, the motivation behind the project, and the main objectives that were set out to be achieved.
+This chapter introduces the background of the study, the motivation behind the project, and the main objectives that were set out to be achieved.
 \section{Background}
-Quantum mechanics places fundamental constraints on the dynamics of physical systems. Determining the minimum time required for a quantum system to evolve into a distinguishably different state is a fundamental question that has direct implications for the ultimate speed of quantum computation and the fundamental limits of quantum control.
+Quantum mechanics places fundamental constraints on the dynamics of physical systems. Determining the minimum time required for a quantum system to evolve into a distinguishable state is a fundamental question that has direct implications for the ultimate speed of quantum computation and the fundamental limits of quantum control.
 
-The energy-time uncertainty relation $\Delta H \Delta t \sim \hbar$ has long been invoked as an answer, but its interpretation is subtle. A rigorous formulation was first provided by Mandelstam and Tamm in 1945, who derived a precise inequality providing a bound on how fast any dynamical quantity can change in terms of the system's energy uncertainty.
+The energy-time uncertainty relation $\Delta E \Delta t \ge \hbar / 2$ has long been invoked to address this. Rearranging this inequality yields $\Delta t \ge \frac{\hbar}{2 \Delta E}$, which physically implies that the timescale $\Delta t$ over which a quantum system undergoes significant evolution is inversely proportional to its energy spread $\Delta E$. For example, an atom in an excited state with a very short lifetime ($\Delta t$) will exhibit a broad spread in its measured emission energy (known as the natural linewidth, $\Delta E$). Conversely, a stationary state with a perfectly defined energy ($\Delta E = 0$) has an infinite lifetime ($\Delta t \to \infty$) and never mathematically evolves. Thus, energy uncertainty acts as the fundamental "fuel" driving quantum evolution. 
 
-This internship, carried out at SRM University AP under Dr. Swetamber P. Das, focused on understanding the Quantum Speed Limit from first principles. The study began with a review of the quantum mechanical formalism before building up to the derivation of the Mandelstam-Tamm bound and its physical applications.
+While practically useful, this relation's interpretation is historically subtle. A rigorous formulation was first provided by Mandelstam and Tamm in 1945, who bypassed these ambiguities by deriving a precise inequality that bounds how fast any dynamical quantity can change based purely on the system's exact energy variance.
 
 \section{Objectives}
-The primary objectives of this internship were:
+The primary objectives of this study were:
 \begin{itemize}
     \item To derive the Mandelstam-Tamm quantum speed limit.
     \item To generalize the MT bound to the case of non-orthogonal initial and final states.
-    \item To apply the MT bound explicitly to a two-state quantum system governed by the Hamiltonian $H = \frac{\hbar \omega_0}{2} \sigma_z$, computing the energy uncertainty, the QSL time, and the time-dependent angle and visualize the resulting time evolution computationally
+    \item To apply the MT bound explicitly to a two-level quantum system governed by the Hamiltonian $H = \frac{\hbar \omega_0}{2} \sigma_z$ (where $\omega_0$ represents the characteristic transition frequency and $\sigma_z$ is the Pauli-Z matrix), computing the energy uncertainty, the QSL time, and the time-dependent angle, and visualizing the resulting time evolution computationally.
 \end{itemize}
